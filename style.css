@@ -2,28 +2,48 @@
   height: 600px;
   width: 800px;
   font-size: 3em;
+  display: grid;
+  grid-template-columns: 150px 500px 150px;
+  grid-template-rows: 100px 200px 200px 100px;
+  grid-template-areas: 
+    "header header header"
+    "nav artone ad"
+    "nav arttwo ad"
+    "footer footer footer";
 }
 
 #header {
   background-color: red;
+  
+  grid-area: header;
 }
 
 #footer {
   background-color: indigo;
+  
+  grid-area: footer;
 }
 
 #article-1 {
   background-color: yellow;
+
+  grid-area: artone;
 }
 
 #article-2 {
   background-color: green;
+
+  grid-area: arttwo;
 }
 
 #nav {
   background-color: orange;
+
+  grid-area: nav;
 }
 
 #ad-area {
   background-color: blue;
+  
+  grid-area: ad;
 }
